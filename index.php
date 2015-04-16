@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html manifest="appcache.manifest">
+<html>
+<!--<html manifest="appcache.manifest">-->
 <head>
 	<meta charset="utf-8" />
 	<title>KHS Student Info</title>
