@@ -1,0 +1,21 @@
+CACHE MANIFEST
+#To allow an update to the page for refresh, we need to have a version number.
+#VERSION: 2015-04-16:v1.03.02
+
+#https://msdn.microsoft.com/en-us/library/ie/hh673545.aspx
+#http://www.html5rocks.com/en/tutorials/appcache/beginner/
+CACHE: #Can be removed as it is implied
+# Defines resources to be cached.
+index.php
+style.css
+db.js
+
+#FALLBACK:
+# Defines resources to be used if non-cached
+# resources cannot be downloaded, for example
+# when the browser is offline..
+#photos/ figure2.png
+
+#NETWORK:
+# Defines resources that will not be cached.
+#figure3.png
