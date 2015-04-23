@@ -22,3 +22,4 @@ var dbData = $.ajax({
 	async: false
 }).responseText;
 
+//http://datatables.net/  Might be the best way to display the data...might make it super easy to do.
