@@ -9,14 +9,16 @@
 
 //Structure:
 //Include the database structure, what elements do you want to store?
-//course_id, course_section_id, period, start_time, end_time, title, teacher_name, room_#
+//course_section_id, course_short_title, term_code, room, period, teacher_last_name, teacher_first_name, teacher_email
 
 //Elements:
 //I will create the link to Kuna Schools Data Warehouse
+//Data Warehouse will return the above elements for the current term and try to filter on start and end dates to only
+//provide latest schedule
 //You can call the data using this form:
-//var dbData = $.ajax({
-//	url: '../include/student.inc.php?s=studentid', //replace studentid with the actual id
-//	dataType: 'json',
-//	async: false
-//}).responseText;
+var dbData = $.ajax({
+	url: '../include/student.inc.php?s=309983', //we will use Josiah for testing and I will replace with php code to get ID
+	dataType: 'json',
+	async: false
+}).responseText;
 
