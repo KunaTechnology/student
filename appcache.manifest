@@ -6,6 +6,8 @@ CACHE MANIFEST
 #http://www.html5rocks.com/en/tutorials/appcache/beginner/
 CACHE: #Can be removed as it is implied
 # Defines resources to be cached.
+#I am unsure if we can cache a file outside of the folder and without the student identifier s=
+../include/student.inc.php
 index.php
 style.css
 db.js
