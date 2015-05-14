@@ -26,8 +26,22 @@ var dbData = $.ajax({
 }).responseText;
 if(dbData!='null'){//check to see if no data returned
 	var stuData = eval('(' + dbData + ')');//format data into javascript array
+	var ht = "<table id='schedule'>\n";
+	ht += '<tr><th>Meet</th><th>Term</th><th>Crs-Sec</th><th>Title</th><th>Teacher</th><th>Room</th></tr>\n';
 	//Display data with html table using javascript to fill in html div
-	//stuData[0].course_section_id (easiest to process with a for loop)
+	for(var i = 0; i<stuData.length; i++)
+	{
+		ht += '<tr>';
+		ht += '<td>' + stuData[i].period + '</td>';
+		ht += '<td>' + stuData[i].term_code + '</td>';
+		ht += '<td>' + stuData[i].course_section_id + '</td>';
+		ht += '<td>' + stuData[i].course_short_title + '</td>';
+		ht += '<td>' + stuData[i].teacher_last_name + ', ' + stuData[i].teacher_first_name + '</td>';
+		ht += '<td>' + stuData[i].room + '</td>';
+		ht += '</tr>\n';
+	}
+	ht += '</table><br />\n';
+	document.getElementById('Student Schedule').innerHTML=ht;
 } else {
-	document.getElementById('schedule').innerHTML='';//empty div if no data to display
+	document.getElementById('Student Schedule').innerHTML='';//empty div if no data to display
 }
