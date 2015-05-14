@@ -1,16 +1,16 @@
 CACHE MANIFEST
 #To allow an update to the page for refresh, we need to have a version number.
-#VERSION: 2015-04-16:v1.03.03
+#VERSION: 2015-04-16:v1.03.04
 
 #https://msdn.microsoft.com/en-us/library/ie/hh673545.aspx
 #http://www.html5rocks.com/en/tutorials/appcache/beginner/
 CACHE: #Can be removed as it is implied
 # Defines resources to be cached.
 #I am unsure if we can cache a file outside of the folder and without the student identifier s=
-../include/student.inc.php
-index.php
-style.css
-db.js
+#../include/student.inc.php
+#index.php
+#style.css
+#db.js
 
 #FALLBACK:
 # Defines resources to be used if non-cached
