@@ -14,3 +14,22 @@ body {
 	background-color:black;
 	color:gold;
 }
+ul li {
+	background-color: rgb(0, 50, 50);
+	border: solid thin rgb(0, 50, 50);
+	border-radius: 8px;
+	width: 260px;
+	height: 30px;
+	text-align: center;
+	vertical-align: center;
+	padding: 10px 0px 0px 0px;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 8px;
+}
+ul li:hover {
+	background-color: rgb(0, 100, 100);
+}
+ul li:active {
+	background-color: rgb(0, 120, 120);
+}
