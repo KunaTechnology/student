@@ -6,13 +6,20 @@
 	<title>KHS Student Info</title>
 	<link href="style.css" type="text/css" rel="stylesheet" />
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src = "db.js"></script>
 </head>
+<div id = "head">
+	Home
+	</div>
 <body>
 <!-- https://msdn.microsoft.com/en-us/hh781002.aspx -->
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API -->
 <?php echo $_SERVER['LOGON_USER']; ?>
 <h1>Kuna High School</h1>
 <h3>Student Information App</h3>
+<ul>
+	<li>test</li>
+</ul>
 <p>Welcome to the KHS student app created for you by the KHS MOUSE Squad!</p>
 <p>Draw the data from the tables to display on the page.  We could even create it as one page with hidden div's that
 expand on touch of the button to display the data, no need to have multiple pages to refresh and store.</p>
@@ -24,5 +31,4 @@ isn't a difficult task, but can be daunting at first.  I am here to help and wil
 <div id='Building Maps'>Building Maps</div>
 <div id='Family Link'>Family Link</div>
 </body>
-<script src="db.js"></script>
 </html>
